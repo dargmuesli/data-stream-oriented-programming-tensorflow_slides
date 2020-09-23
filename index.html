@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+	<html class="sl-root decks export offline loaded">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Datenstromorientierte Programmierung mit Tensorflow</title>
+
+
+		<link rel="stylesheet" type="text/css" href="lib/offline-v2.css">
+
+
+
+	</head>
+	<body class="reveal-viewport theme-font-montserrat theme-color-black-orange">
+		<div class="reveal">
+			<div class="slides">
+				<section data-id="10021a07484a10afc971f58400625a8a"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 238px; height: auto;" data-block-id="fbdd562240e1710a369f271c89ab86c3"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>Title Text</h1></div></div>
+<div class="sl-block" data-block-type="image" style="width: 1244.44px; height: 700px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-1bb92c" data-block-id="560f6ce9477e98e66579d79a2aebeffb"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="480" data-natural-height="270" data-lazy-loaded="" data-src="datenstromorientierte-programmierung-mit-tensorflow/7959234720f0f653a21acf01d303d162.gif"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 960px; left: 0px; top: 203.5px;" data-name="text-f3c099" data-block-id="5697a279d00bb888bc9c55d2c7854de5"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; background-color: rgba(0, 0, 0, 0.55); transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="fade-in">
+<h1><strong>Datenstromorientierte Programmierung</strong></h1>
+
+<h1><strong>mit Tensorflow</strong></h1>
+</div></div></section><section data-id="d87b0ad8665df8b2c79894d57489ab3f"><div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 33px;" data-name="text-8166a6" data-block-id="5267cc93ab6be931d15b7ff709af384d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="fade-in">
+<h2><strong>Datenstromorientierte Programmierung</strong></h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 960px; left: 0px; top: 245px;" data-name="text-da0c85" data-block-id="00cfd1000e42d92b265c2dd804681a98"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; text-align: left; font-size: 150%; line-height: 1.56;" data-has-line-height="">
+<ul>
+	<li class="fragment" data-fragment-index="0">~ 1970 von <a href="https://www.youtube.com/watch?v=up2yhNTsaDs" target="_blank">J. Paul Morrison</a> entwickelt</li>
+	<li class="fragment" data-fragment-index="1">Fokus auf Maintainability</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 960px; left: 0px; top: 420px;" data-block-id="3ca068f56ef9720ca4ed08707404150a" data-name="text-c2a33a"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; text-align: center; font-size: 150%; line-height: 1.56;" data-has-line-height="" data-fragment-index="2">
+<p>Quelle ➡ Knoten ➡ Senke</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 391px; left: 89px; top: 525px;" data-block-id="51088efde707b390aa14d9e3a2bbfbd6" data-name="text-7f87f8"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; text-align: center; font-size: 150%; line-height: 1.56;" data-has-line-height="" data-fragment-index="3">
+<p>extern     intern</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 80px; left: 200px; top: 496.434px;" data-name="text-01c8d9" data-block-id="249d3257bf4dc7f539d166a8add28dc0"><div class="sl-block-style" style="z-index: 14; transform: rotate(124deg);"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;" data-fragment-index="3">
+<p>➡</p>
+</div></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 80px; left: 271px; top: 495.894px;" data-block-id="99b61cac0fb2744adb46965743589b6c" data-name="text-5d234c"><div class="sl-block-style" style="z-index: 15; transform: rotate(52deg);"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15;" data-fragment-index="3">
+<p>➡</p>
+</div></div></div></section><section class="stack" data-id="f89860044daa88429781272a1aca15f8"><section data-id="19f586d1d86d354895ad5478f11b8cb2"><div class="sl-block" data-block-type="image" style="width: 588.089px; height: 330.8px; left: 185.956px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-fabcfa" data-block-id="2fc8551ce1f7444c043dd1d2910d29ab"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="1200" data-natural-height="675" data-lazy-loaded="" data-src="datenstromorientierte-programmierung-mit-tensorflow/b3d3b227ad807746209d90fd83add2ae.png"></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 365px; height: 80px; left: 297.5px; top: 192.3px;" data-name="shape-e0d34b" data-block-id="c2e954961398d028a9e6e35934365098"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 10;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 365 80"><rect width="365" height="80" rx="0" ry="0" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 960px; left: 0px; top: 326px;" data-name="text-21d249" data-block-id="524a794a244872979fc392afc5499af1"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; text-align: left; font-size: 150%; line-height: 1.56;" data-has-line-height="">
+<ul>
+	<li class="fragment" data-fragment-index="0">Sprache für mathematische Berechnungen
+	<ul>
+		<li class="fragment" data-fragment-index="1">assoziiert mit machine/deep learning</li>
+	</ul>
+	</li>
+	<li class="fragment" data-fragment-index="2">Open Source (Apache 2.0)</li>
+	<li class="fragment" data-fragment-index="3">entwickelt von</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 162.722px; height: 55px; left: 378.45px; top: 645px; min-width: 1px; min-height: 1px;" data-name="image-5765b6" data-block-id="8ba1a735ed5ccee55be361bb6ccc78c6"><div class="sl-block-content fragment" style="z-index: 13;" data-fragment-index="3"><img style="" data-natural-width="2000" data-natural-height="676" data-lazy-loaded="" data-src="datenstromorientierte-programmierung-mit-tensorflow/485b8c3afcc132b7483aab03e380366e.png"></div></div></section><section data-id="d8056770dc0ddc343a2c1bb6025b8ada"><div class="sl-block" data-block-type="image" style="width: 806.4px; height: 430.618px; left: 76.8px; top: 140px;" data-name="image-95cb7f" data-block-id="37ee0b47a172ea9bc2a68c749e889a17"><a class="sl-block-content" style="z-index: 10; transition-duration: 0.6s; transition-delay: 0.6s;" href="https://www.heise.de/select/ix/2017/9/1504466878493561" target="_blank" data-animation-type="fade-in"><img style="" data-natural-width="500" data-natural-height="267" data-src="datenstromorientierte-programmierung-mit-tensorflow/45999d7e637b83bf995c09f46d34c1dc.png"></a></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 33px;" data-name="text-1ec8ac" data-block-id="8c9db87c96e2da00d945c3c82cf30125"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="fade-in">
+<h2><strong>Hardwaresupport</strong></h2>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 105px; height: 105px; left: 427.5px; top: 595px;" data-name="image-f0da8d" data-block-id="2d1d807be315f87f2c5f9b44cead1df4"><div class="sl-block-content fragment" style="z-index: 12;" data-fragment-index="0"><img style="" data-natural-width="186" data-natural-height="186" data-src="datenstromorientierte-programmierung-mit-tensorflow/42c1fcdf6d9401f73b3a07e9072d7f43.png"></div></div></section><section data-id="30f7df31275cec1c3496447f18e24abe"><div class="sl-block" data-block-type="image" style="width: 960px; height: 540.308px; left: 0px; top: 79.846px; min-width: 1px; min-height: 1px;" data-name="image-039e45" data-block-id="8c5ac17ee3f7a4766ebe99f32ea8ce59"><a class="sl-block-content" style="z-index: 10; transition-duration: 0.6s; transition-delay: 0.6s;" href="https://www.youtube.com/watch?v=F_uuqfgdZZw" target="_blank" data-animation-type="fade-in"><img style="" data-natural-width="780" data-natural-height="439" data-lazy-loaded="" data-src="datenstromorientierte-programmierung-mit-tensorflow/d417b87c05e344e04ca1030cab82609f.png"></a></div></section><section data-id="2745f6b4beeeb9cf0db7b230e748ebf7"><div class="sl-block" data-block-type="code" style="width: 960px; height: 490px; left: 0px; top: 105px;" data-name="code-04e29b" data-block-id="5fd3b3cfb571c48d76f03da13cd60b52"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 10; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="fade-in"><pre style="font-size: 16px; line-height: 19px;" class="python"><code data-line-numbers=""># TensorFlow laden
+
+import tensorflow as tf
+
+
+# TensorFlow Session definieren
+
+sess = tf.Session()
+
+
+# Zwei Konstanten im "8-bit signed integer"-Format
+
+x = tf.constant(3, dtype=tf.int8)
+
+y = tf.constant(2, dtype=tf.int8)
+
+
+# Eine Multiplikation
+
+z = tf.multiply(x, y)
+
+
+# Ausführung
+
+sess.run(z)</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 31px;" data-name="text-635824" data-block-id="5175d761b9a27e4af65f8adfd60fce63"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="fade-in">
+<h3><strong>Code-Beispiel</strong></h3>
+</div></div></section><section data-id="85624f1b6d89d65ac8491a703f4534ee"><div class="sl-block" data-block-type="image" style="width: 806.4px; height: 249.984px; left: 80px; top: 140px;" data-name="image-25fadd" data-block-id="d15144ef31d8b10afb2b0f2ffcdc57fc"><a class="sl-block-content" style="z-index: 10; transition-duration: 0.6s; transition-delay: 0.6s;" href="https://medium.com/@ouwenhuang/how-to-learn-tensorflow-the-hard-way-8b34b1e8e173" target="_blank" data-animation-type="fade-in"><img style="" data-natural-width="700" data-natural-height="217" data-src="datenstromorientierte-programmierung-mit-tensorflow/c2761dcbba50bc34fb16337deb98e46e.png"></a></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 44.5px;" data-name="text-289063" data-block-id="f1a42a253e82caa8d50b4bdd2476449b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="fade-in">
+<h3><strong>Berechnungsgraph</strong></h3>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 80px; top: 420px;" data-name="text-6b78a5" data-block-id="07b4058828e8b68214c0584e2c7f1b3f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; text-align: left; font-size: 150%; line-height: 1.56;" data-has-line-height="">
+<ul>
+	<li class="fragment" data-fragment-index="0">klare Abhängigkeiten</li>
+	<li class="fragment" data-fragment-index="1">sprachagnostisch</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 80px; top: 630px;" data-block-id="f6a5cb50eb414f018bb6014b802fb4ab" data-name="text-0161f3"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; text-align: left; font-size: 150%; line-height: 1.56;" data-has-line-height="">
+<ul>
+	<li class="fragment" data-fragment-index="2">statischer Graph</li>
+</ul>
+</div></div></section></section><section data-id="5776eb5ea2ad1c850e14711cd8ba3371"><div class="sl-block" data-block-type="image" style="width: 1050px; height: 700px; left: -45px; top: 0px;" data-name="image-bc8c08" data-block-id="bde20969497388be6ae7d8ebfa396877"><div class="sl-block-content" style="z-index: 10; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="fade-in"><img style="" data-natural-width="1920" data-natural-height="1280" data-src="datenstromorientierte-programmierung-mit-tensorflow/8ac708bab3f00bdb4e2fff71ae3b20eb"></div></div></section>
+			</div>
+		</div>
+
+		<script>
+			var SLConfig = {"deck": {"id":1922472,"slug":"datenstromorientierte-programmierung-mit-tensorflow","title":"Datenstromorientierte Programmierung mit Tensorflow","description":"","width":960,"height":700,"margin":0.05,"visibility":"all","published_at":"2020-09-11T10:19:33.114Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/8dfe190cdd0f85c1f2ebe8720ca1fcb7/thumb.jpg?1599830703","view_count":6,"user":{"id":1142422,"username":"dargmuesli","name":"Jonas Thelemann","description":"","thumbnail_url":"https://www.gravatar.com/avatar/632fa3870b8c01d361cf16615526654b?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","account_type":"lite","team_id":null,"settings":{"id":3934566,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"montserrat","theme_color":"black-orange","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":true,"rolling_links":false,"center":false,"shuffle":false,"should_loop":false,"share_notes":false,"slide_number":true,"slide_count":9,"rtl":false,"version":2,"collaborative":null,"deck_user_editor_limit":1,"data_updated_at":1599830811997,"font_typekit":null,"font_google":null,"time_limit":15,"navigation_mode":"default","upsizing_enabled":true,"notes":{"30f7df31275cec1c3496447f18e24abe":"Tensor = multidimensionaler array\nFlow = Operationsgraph:\n    Nodes sind Operationen, Kanten sind Tensoren\n\nBsp.: Vektor und Matrix sind Input und Multiplikation ist die Operation","d87b0ad8665df8b2c79894d57489ab3f":"bsp. Audio- oder Videodaten\n\nMaintainability: einzelne Aspekte sind getrennt voneinander\n\nQuelle: nur Ausgänge\n    extern: Daten oder von Eingabegeräten (z. B.: Mikrofon oder Videokamera).\n    intern: konstanter Wert, aber auch Sinus-Kurven oder ähnliches.\nKnoten: Eingang \u0026 Ausgang\nSenke: nur Eingang, kein Ausgang\n\n---\u003e Graph!","19f586d1d86d354895ad5478f11b8cb2":"Insbesondere für Prozeduren, deren \"Aussehen\" man nicht kennt\":\nAddition? einfach! Gesichtserkennung? -\u003e menschliches Gehirn","2745f6b4beeeb9cf0db7b230e748ebf7":"Google entwickelt TPUs: Tensor Processing Units, die Tensorflow-Algorithmen besonders schnell verarbeiten können.","d8056770dc0ddc343a2c1bb6025b8ada":"Higher-level APIs wie Keras (Python), welches u.a. Tensorflow unterstützt."}}};
+
+
+			// Use local fonts
+			SLConfig.fonts_url = 'lib/fonts/';
+		</script>
+
+		<script src="lib/reveal.js"></script>
+		<script src="lib/reveal-plugins.js"></script>
+		<script src="lib/offline.js"></script>
+
+		<!-- Initialize the presentation -->
+		<script>
+			Reveal.initialize({
+				width: 960,
+				height: 700,
+				margin: 0.05,
+				
+
+				hash: true,
+				controls: true,
+				progress: true,
+				mouseWheel: false,
+				showNotes: false,
+				slideNumber: true,
+				fragmentInURL: true,
+
+				autoSlide: 0,
+				autoSlideStoppable: true,
+
+				autoAnimateMatcher: SL.deck.AutoAnimate.matcher,
+
+				center: false,
+				shuffle: false,
+				loop: false,
+				rtl: false,
+				navigationMode: "default",
+
+				transition: "slide",
+				backgroundTransition: "slide",
+
+				highlight: {
+					escapeHTML: false
+				},
+
+				plugins: [ RevealZoom, RevealNotes, RevealMarkdown, RevealHighlight ]
+			});
+		</script>
+
+		
+
+	</body>
+</html>
